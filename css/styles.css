@@ -4,6 +4,9 @@
     --color-acent: #ff3400;
     --color-headings: #1b0760;
     --color-body: #918ca4;    
+    --color-body-darker: #5c5577;
+    --color-border: #ccc;
+    --border-radius: 30px;
 }
 
 /* Typography */
@@ -414,6 +417,23 @@ a {
 
   .quote__organization {
     font-size: 1.6rem;
+  }
+}
+
+/* Grids */
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
